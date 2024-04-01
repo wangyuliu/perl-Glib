@@ -1,0 +1,1147 @@
+[    0s] Memory limit set to 198059786KB
+[    0s] Using BUILD_ROOT=/mnt/workers/root_1
+[    0s] Using BUILD_ARCH=riscv64
+[    0s] 
+[    1s] 
+[    1s] riscv64-oe2309-iscas-r750-docker-chroot-01-24c70g started "build perl-Glib.spec" at Mon Apr  1 13:15:37 UTC 2024.
+[    1s] 
+[    1s] Building glib for project 'openEuler:24.03:fix' repository 'standard' arch 'riscv64' srcmd5 'dab9054b822e34e7bea1a006cd5affbb'
+[    1s] 
+[    1s] processing recipe /mnt/workers/root_1/.build-srcdir/perl-Glib.spec ...
+[    3s] running changelog2spec --target rpm --file /mnt/workers/root_1/.build-srcdir/perl-Glib.spec
+[    3s] init_buildsystem --configdir /var/run/obs/worker/1/build/configs --cachedir /var/cache/build --clean --rpmlist /mnt/workers/root_1/.build.rpmlist /mnt/workers/root_1/.build-srcdir/perl-Glib.spec build ...
+[   16s] cycle: filesystem -> bash
+[   16s]   breaking dependency filesystem -> bash
+[   16s] cycle: rpm-libs -> rpm
+[   16s]   breaking dependency rpm -> rpm-libs
+[   16s] [1/29] preinstalling filesystem...
+[   18s] [2/29] preinstalling glibc...
+[   21s] [3/29] preinstalling libatomic...
+[   22s] [4/29] preinstalling libdb...
+[   24s] [5/29] preinstalling libgpg-error...
+[   25s] [6/29] preinstalling lz4...
+[   25s] [7/29] preinstalling pcre2...
+[   26s] [8/29] preinstalling xz-libs...
+[   27s] [9/29] preinstalling zlib...
+[   27s] [10/29] preinstalling zstd...
+[   28s] [11/29] preinstalling attr...
+[   29s] [12/29] preinstalling bash...
+[   30s] [13/29] preinstalling pesign-obs-integration...
+[   31s] [14/29] preinstalling selinux-policy-targeted...
+[   35s] [15/29] preinstalling bzip2...
+[   35s] [16/29] preinstalling cmake...
+[   41s] [17/29] preinstalling compat-openssl11-libs...
+[   42s] [18/29] preinstalling libacl...
+[   42s] [19/29] preinstalling libcap...
+[   43s] [20/29] preinstalling libgcrypt...
+[   44s] [21/29] preinstalling libselinux...
+[   44s] [22/29] preinstalling lua...
+[   45s] [23/29] preinstalling openssl-libs...
+[   47s] [24/29] preinstalling popt...
+[   47s] [25/29] preinstalling systemd-libs...
+[   48s] [26/29] preinstalling rpm...
+[   49s] [27/29] preinstalling dbus-libs...
+[   49s] [28/29] preinstalling rpm-libs...
+[   50s] [29/29] preinstalling digest-list-tools...
+[   53s] initializing rpm db...
+[   56s] reordering...cycle: bash -> coreutils
+[   56s]   breaking dependency coreutils -> bash
+[   56s] cycle: bash -> coreutils -> info
+[   56s]   breaking dependency coreutils -> info
+[   56s] cycle: glibc -> basesystem -> filesystem -> bash -> coreutils -> gmp -> pkgconf
+[   56s]   breaking dependency filesystem -> bash
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils -> gmp -> pkgconf
+[   56s]   breaking dependency coreutils -> gmp
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils
+[   56s]   breaking dependency coreutils -> glibc
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils -> libacl
+[   56s]   breaking dependency coreutils -> libacl
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils -> attr
+[   56s]   breaking dependency coreutils -> attr
+[   56s] cycle: coreutils -> libcap -> bash
+[   56s]   breaking dependency libcap -> bash
+[   56s] cycle: coreutils -> libcap
+[   56s]   breaking dependency coreutils -> libcap
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils -> openssl-libs
+[   56s]   breaking dependency coreutils -> openssl-libs
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils -> libselinux
+[   56s]   breaking dependency libselinux -> glibc
+[   56s] cycle: glibc -> basesystem -> filesystem -> coreutils -> libselinux -> pcre2
+[   56s]   breaking dependency glibc -> basesystem
+[   56s] cycle: glibc -> glibc-common -> bash -> coreutils -> libselinux -> pcre2
+[   56s]   breaking dependency glibc-common -> bash
+[   56s] cycle: glibc -> glibc-common -> coreutils -> libselinux -> pcre2
+[   56s]   breaking dependency glibc-common -> coreutils
+[   56s] cycle: glibc -> glibc-common
+[   56s]   breaking dependency glibc-common -> glibc
+[   56s] cycle: glibc -> glibc-common -> libselinux -> pcre2
+[   56s]   breaking dependency pcre2 -> glibc
+[   56s] cycle: glibc -> glibc-common -> libselinux -> pcre2 -> readline
+[   56s]   breaking dependency readline -> glibc
+[   56s] cycle: glibc -> glibc-common -> libselinux -> pcre2 -> readline -> ncurses-libs
+[   56s]   breaking dependency libselinux -> pcre2
+[   56s] cycle: libselinux -> libsepol -> bash -> coreutils
+[   56s]   breaking dependency bash -> coreutils
+[   56s] cycle: libselinux -> libsepol -> bash -> filesystem -> coreutils
+[   56s]   breaking dependency libsepol -> bash
+[   56s] cycle: libselinux -> libsepol -> coreutils
+[   56s]   breaking dependency libsepol -> coreutils
+[   56s] cycle: glibc -> glibc-common -> libselinux -> libsepol
+[   56s]   breaking dependency glibc -> glibc-common
+[   56s] cycle: glibc -> filesystem -> coreutils -> libselinux -> libsepol
+[   56s]   breaking dependency filesystem -> coreutils
+[   56s] cycle: filesystem -> setup -> openEuler-release -> bash
+[   56s]   breaking dependency filesystem -> setup
+[   56s] cycle: glibc -> filesystem -> ncurses-libs
+[   56s]   breaking dependency ncurses-libs -> glibc
+[   56s] cycle: openssl-libs -> crypto-policies -> python3
+[   56s]   breaking dependency python3 -> openssl-libs
+[   56s] cycle: crypto-policies -> python3 -> libnsl2 -> libtirpc -> krb5-libs
+[   56s]   breaking dependency python3 -> libnsl2
+[   56s] cycle: crypto-policies -> python3 -> libtirpc -> krb5-libs
+[   56s]   breaking dependency python3 -> libtirpc
+[   56s] cycle: pam -> libpwquality
+[   56s]   breaking dependency pam -> libpwquality
+[   56s] cycle: rpm -> rpm-libs
+[   56s]   breaking dependency rpm -> rpm-libs
+[   56s] cycle: perl-libs -> perl-Carp
+[   56s]   breaking dependency perl-libs -> perl-Carp
+[   56s] cycle: perl-libs -> perl-Exporter
+[   56s]   breaking dependency perl-libs -> perl-Exporter
+[   56s] cycle: perl-Carp -> perl-Exporter
+[   56s]   breaking dependency perl-Exporter -> perl-Carp
+[   56s] cycle: perl -> perl-PathTools
+[   56s]   breaking dependency perl -> perl-PathTools
+[   56s] cycle: perl -> perl-ExtUtils-MakeMaker
+[   56s]   breaking dependency perl -> perl-ExtUtils-MakeMaker
+[   56s] cycle: perl -> perl-File-Path -> perl-PathTools
+[   56s]   breaking dependency perl -> perl-File-Path
+[   56s] cycle: perl -> perl-Getopt-Long -> perl-Pod-Usage
+[   56s]   breaking dependency perl -> perl-Getopt-Long
+[   56s] cycle: perl -> perl-Locale-Maketext
+[   56s]   breaking dependency perl -> perl-Locale-Maketext
+[   56s] cycle: perl -> perl-Math-BigInt
+[   56s]   breaking dependency perl -> perl-Math-BigInt
+[   56s] cycle: perl -> perl-Pod-Simple
+[   56s]   breaking dependency perl -> perl-Pod-Simple
+[   56s] cycle: perl -> perl-Socket
+[   56s]   breaking dependency perl -> perl-Socket
+[   56s] cycle: perl -> perl-Storable
+[   56s]   breaking dependency perl -> perl-Storable
+[   56s] cycle: perl -> perl-Text-Tabs+Wrap
+[   56s]   breaking dependency perl -> perl-Text-Tabs+Wrap
+[   56s] cycle: perl -> perl-Time-Local -> perl-constant
+[   56s]   breaking dependency perl -> perl-Time-Local
+[   56s] cycle: perl -> perl-Unicode-Normalize
+[   56s]   breaking dependency perl -> perl-Unicode-Normalize
+[   56s] cycle: perl -> perl-constant
+[   56s]   breaking dependency perl -> perl-constant
+[   56s] cycle: perl -> perl-experimental
+[   56s]   breaking dependency perl -> perl-experimental
+[   56s] cycle: perl -> perl-threads
+[   56s]   breaking dependency perl -> perl-threads
+[   56s] cycle: perl -> perl-threads-shared
+[   56s]   breaking dependency perl -> perl-threads-shared
+[   56s] cycle: perl -> perl-version
+[   56s]   breaking dependency perl -> perl-version
+[   56s] cycle: perl -> perl-Archive-Tar
+[   56s]   breaking dependency perl -> perl-Archive-Tar
+[   56s] cycle: perl-B-Debug -> perl
+[   56s]   breaking dependency perl -> perl-B-Debug
+[   56s] cycle: perl -> perl-CPAN-Meta -> perl-CPAN-Meta-Requirements
+[   56s]   breaking dependency perl -> perl-CPAN-Meta
+[   56s] cycle: perl -> perl-CPAN-Meta-Requirements
+[   56s]   breaking dependency perl -> perl-CPAN-Meta-Requirements
+[   56s] cycle: perl -> perl-CPAN-Meta-YAML
+[   56s]   breaking dependency perl -> perl-CPAN-Meta-YAML
+[   56s] cycle: perl -> perl-Compress-Raw-Bzip2
+[   56s]   breaking dependency perl -> perl-Compress-Raw-Bzip2
+[   56s] cycle: perl -> perl-Compress-Raw-Zlib
+[   56s]   breaking dependency perl -> perl-Compress-Raw-Zlib
+[   56s] cycle: perl -> perl-Config-Perl-V
+[   56s]   breaking dependency perl -> perl-Config-Perl-V
+[   56s] cycle: perl -> perl-Data-Dumper
+[   56s]   breaking dependency perl -> perl-Data-Dumper
+[   56s] cycle: perl -> perl-Devel-PPPort
+[   56s]   breaking dependency perl -> perl-Devel-PPPort
+[   56s] cycle: perl -> perl-Digest-SHA
+[   56s]   breaking dependency perl -> perl-Digest-SHA
+[   56s] cycle: perl -> perl-Encode
+[   56s]   breaking dependency perl -> perl-Encode
+[   56s] cycle: perl -> perl-Env
+[   56s]   breaking dependency perl -> perl-Env
+[   56s] cycle: perl -> perl-ExtUtils-Command
+[   56s]   breaking dependency perl -> perl-ExtUtils-Command
+[   56s] cycle: perl -> perl-ExtUtils-Install
+[   56s]   breaking dependency perl -> perl-ExtUtils-Install
+[   56s] cycle: perl -> perl-ExtUtils-Manifest
+[   56s]   breaking dependency perl -> perl-ExtUtils-Manifest
+[   56s] cycle: perl -> perl-ExtUtils-ParseXS
+[   56s]   breaking dependency perl -> perl-ExtUtils-ParseXS
+[   56s] cycle: perl -> perl-File-Fetch -> perl-PathTools
+[   56s]   breaking dependency perl -> perl-File-Fetch
+[   56s] cycle: perl -> perl-File-Temp -> perl-PathTools
+[   56s]   breaking dependency perl -> perl-File-Temp
+[   56s] cycle: perl -> perl-Filter
+[   56s]   breaking dependency perl -> perl-Filter
+[   56s] cycle: perl -> perl-Filter-Simple -> perl-Filter
+[   56s]   breaking dependency perl -> perl-Filter-Simple
+[   56s] cycle: perl -> perl-HTTP-Tiny
+[   56s]   breaking dependency perl -> perl-HTTP-Tiny
+[   56s] cycle: perl -> perl-IO-Compress
+[   56s]   breaking dependency perl -> perl-IO-Compress
+[   56s] cycle: perl -> perl-IO-Socket-IP
+[   56s]   breaking dependency perl -> perl-IO-Socket-IP
+[   56s] cycle: perl -> perl-IPC-Cmd -> perl-ExtUtils-MakeMaker
+[   56s]   breaking dependency perl -> perl-IPC-Cmd
+[   56s] cycle: perl -> perl-IPC-SysV
+[   56s]   breaking dependency perl -> perl-IPC-SysV
+[   56s] cycle: perl -> perl-JSON-PP
+[   56s]   breaking dependency perl -> perl-JSON-PP
+[   56s] cycle: perl -> perl-Locale-Codes -> perl-constant
+[   56s]   breaking dependency perl -> perl-Locale-Codes
+[   56s] cycle: perl -> perl-Math-BigInt-FastCalc -> perl-Math-BigInt
+[   56s]   breaking dependency perl -> perl-Math-BigInt-FastCalc
+[   56s] cycle: perl -> perl-Module-CoreList
+[   56s]   breaking dependency perl -> perl-Module-CoreList
+[   56s] cycle: perl -> perl-Module-Load -> perl-PathTools
+[   56s]   breaking dependency perl -> perl-Module-Load
+[   56s] cycle: perl -> perl-Module-Load-Conditional
+[   56s]   breaking dependency perl -> perl-Module-Load-Conditional
+[   56s] cycle: perl -> perl-Module-Metadata
+[   56s]   breaking dependency perl -> perl-Module-Metadata
+[   56s] cycle: perl -> perl-Params-Check
+[   56s]   breaking dependency perl -> perl-Params-Check
+[   56s] cycle: perl -> perl-Pod-Checker
+[   56s]   breaking dependency perl -> perl-Pod-Checker
+[   56s] cycle: perl -> perl-Pod-Parser
+[   56s]   breaking dependency perl -> perl-Pod-Parser
+[   56s] cycle: perl -> perl-Pod-Perldoc
+[   56s]   breaking dependency perl -> perl-Pod-Perldoc
+[   56s] cycle: perl -> perl-Pod-Usage
+[   56s]   breaking dependency perl -> perl-Pod-Usage
+[   56s] cycle: perl -> perl-Sys-Syslog
+[   56s]   breaking dependency perl -> perl-Sys-Syslog
+[   56s] cycle: perl -> perl-Term-Cap
+[   56s]   breaking dependency perl -> perl-Term-Cap
+[   56s] cycle: perl -> perl-Test-Harness
+[   56s]   breaking dependency perl -> perl-Test-Harness
+[   56s] cycle: perl -> perl-Test-Simple
+[   56s]   breaking dependency perl -> perl-Test-Simple
+[   56s] cycle: perl -> perl-Text-Balanced
+[   56s]   breaking dependency perl -> perl-Text-Balanced
+[   56s] cycle: perl -> perl-Thread-Queue -> perl-threads-shared
+[   56s]   breaking dependency perl -> perl-Thread-Queue
+[   56s] cycle: perl -> perl-Unicode-Collate -> perl-PathTools
+[   56s]   breaking dependency perl -> perl-Unicode-Collate
+[   56s] cycle: perl -> perl-autodie
+[   56s]   breaking dependency perl -> perl-autodie
+[   56s] cycle: perl -> perl-bignum -> perl-Math-BigInt
+[   56s]   breaking dependency perl -> perl-bignum
+[   56s] cycle: perl -> perl-Encode-devel
+[   56s]   breaking dependency perl -> perl-Encode-devel
+[   56s] cycle: perl -> perl-libnet
+[   56s]   breaking dependency perl -> perl-libnet
+[   56s] cycle: perl -> perl-podlators
+[   56s]   breaking dependency perl -> perl-podlators
+[   56s] cycle: libxcrypt-devel -> glibc-devel
+[   56s]   breaking dependency glibc-devel -> libxcrypt-devel
+[   56s] cycle: cmake-data -> cmake
+[   56s]   breaking dependency cmake -> cmake-data
+[   56s] cycle: nss-util -> nss
+[   56s]   breaking dependency nss -> nss-util
+[   56s] cycle: nss-softokn -> nss-util -> nss
+[   56s]   breaking dependency nss -> nss-softokn
+[   56s] cycle: selinux-policy-targeted -> selinux-policy
+[   56s]   breaking dependency selinux-policy -> selinux-policy-targeted
+[   56s] cycle: perl-Getopt-Long -> perl-Pod-Usage
+[   56s]   breaking dependency perl-Pod-Usage -> perl-Getopt-Long
+[   56s] cycle: perl-Getopt-Long -> perl-Pod-Usage -> perl-podlators -> perl-Encode
+[   56s]   breaking dependency perl-podlators -> perl-Encode
+[   56s] cycle: perl-Getopt-Long -> perl-Pod-Usage -> perl-podlators
+[   56s]   breaking dependency perl-podlators -> perl-Getopt-Long
+[   56s] cycle: perl-Getopt-Long -> perl-Pod-Usage -> perl-podlators -> perl-Pod-Simple -> perl-Encode
+[   56s]   breaking dependency perl-Encode -> perl-Getopt-Long
+[   56s] cycle: perl-Getopt-Long -> perl-Pod-Usage -> perl-podlators -> perl-Pod-Simple
+[   56s]   breaking dependency perl-podlators -> perl-Pod-Simple
+[   56s] cycle: perl-Pod-Usage -> perl-podlators
+[   56s]   breaking dependency perl-podlators -> perl-Pod-Usage
+[   56s] cycle: perl-Getopt-Long -> perl-Pod-Usage -> perl-Pod-Perldoc -> perl-Pod-Simple
+[   56s]   breaking dependency perl-Pod-Perldoc -> perl-Pod-Simple
+[   56s] cycle: perl-ExtUtils-Install -> perl-ExtUtils-MakeMaker
+[   56s]   breaking dependency perl-ExtUtils-MakeMaker -> perl-ExtUtils-Install
+[   56s] done
+[   56s] querying package ids...
+[   74s] [1/270] installing cmake-filesystem-3.27.9-2.oe2403
+[   75s] [2/270] installing fuse-common-3.16.2-1.oe2403
+[   75s] [3/270] installing kernel-headers-6.6.0-12.0.0.8.oe2403
+[   77s] [4/270] installing ncurses-base-6.4-8.oe2403
+[   77s] [5/270] installing openEuler-gpg-keys-1.0-3.1.oe2309
+[   78s] [6/270] installing python-setuptools-69.1.0-1.oe2403
+[   78s] [7/270] installing qt5-srpm-macros-5.15.10-2.oe2309
+[   79s] [8/270] installing tzdata-2024a-1.oe2403
+[   80s] [9/270] installing openEuler-repos-1.0-3.1.oe2309
+[   80s] [10/270] installing ncurses-libs-6.4-8.oe2403
+[   81s] [11/270] installing readline-8.2-2.oe2403
+[   81s] [12/270] installing filesystem-3.16-5.oe2309
+[   83s] warning: group mail does not exist - using root
+[   83s] [13/270] installing emacs-filesystem-1:29.1-1.oe2403
+[   83s] [14/270] installing libgcc-12.3.1-17.oe2403
+[   84s] [15/270] installing pcre2-10.42-6.oe2403
+[   85s] [16/270] installing glibc-2.38-22.oe2403
+[   88s] [17/270] installing brotli-1.1.0-1.oe2403
+[   89s] [18/270] installing cpio-2.14-3.oe2403
+[   90s] [19/270] installing diffutils-3.10-2.oe2403
+[   90s] [20/270] installing expat-2.6.0-1.oe2403
+[   91s] [21/270] installing jansson-2.14-3.oe2403
+[   91s] [22/270] installing json-c-0.17-1.oe2403
+[   92s] [23/270] installing keyutils-libs-1.6.3-5.oe2403
+[   92s] [24/270] installing libatomic-12.3.1-17.oe2403
+[   93s] [25/270] installing libcap-ng-0.8.3-1.oe2403
+[   93s] [26/270] installing libev-4.33-3.oe2403
+[   94s] [27/270] installing libffi-3.4.4-3.oe2403
+[   94s] [28/270] installing libgomp-12.3.1-17.oe2403
+[   94s] [29/270] installing libgpg-error-1.47-1.oe2403
+[   95s] [30/270] installing libnghttp2-1.58.0-1.oe2403
+[   96s] [31/270] installing libsigsegv-2.14-1.oe2403
+[   96s] [32/270] installing libsmartcols-2.39.1-4.oe2403
+[   97s] [33/270] installing libtasn1-4.19.0-1.oe2403
+[   97s] [34/270] installing libtool-ltdl-2.4.7-3.oe2403
+[   98s] [35/270] installing libunistring-1.1-2.oe2403
+[   98s] [36/270] installing libuuid-2.39.1-4.oe2403
+[   99s] [37/270] installing libuv-1:1.47.0-2.oe2403
+[   99s] [38/270] installing libxcrypt-4.4.36-1.oe2403
+[  100s] [39/270] installing lz4-1.9.4-2.oe2403
+[  100s] [40/270] installing nspr-4.35.0-2.oe2403
+[  101s] [41/270] installing pkgconf-1.9.5-1.oe2403
+[  101s] [42/270] installing which-2.21-15.oe2403
+[  102s] [43/270] installing xz-libs-5.6.0-1.oe2403
+[  102s] [44/270] installing zlib-1.3.1-1.oe2403
+[  103s] [45/270] installing attr-2.5.1-4.oe2403
+[  103s] [46/270] installing libstdc++-12.3.1-17.oe2403
+[  104s] [47/270] installing gdbm-1:1.23-2.oe2403
+[  105s] [48/270] installing libsepol-3.5-2.oe2403
+[  106s] [49/270] installing bash-5.2.15-5.oe2403
+[  107s] [50/270] installing audit-libs-1:3.1.2-1.oe2403
+[  107s] [51/270] installing file-libs-5.45-1.oe2403
+[  109s] [52/270] installing gmp-1:6.3.0-2.oe2403
+[  110s] [53/270] installing libacl-2.3.1-1.oe2403
+[  110s] [54/270] installing libffi-devel-3.4.4-3.oe2403
+[  110s] [55/270] installing libgcrypt-1.10.2-1.oe2403
+[  111s] [56/270] installing libpng-2:1.6.40-1.oe2403
+[  112s] [57/270] installing libsepol-devel-3.5-2.oe2403
+[  113s] [58/270] installing p11-kit-0.25.0-2.oe2403
+[  114s] [59/270] installing zlib-devel-1.3.1-1.oe2403
+[  115s] [60/270] installing cyrus-sasl-lib-2.1.28-2.oe2403
+[  115s] [61/270] installing fuse-2.9.9-11.oe2403
+[  116s] [62/270] installing gc-8.2.4-1.oe2403
+[  116s] [63/270] installing libdb-5.3.28-41.oe2403
+[  118s] [64/270] installing libselinux-3.5-2.oe2403
+[  119s] [65/270] installing libxml2-2.11.5-2.oe2403
+[  120s] [66/270] installing zstd-1.5.5-1.oe2403
+[  121s] [67/270] installing pcre-8.45-5.oe2403
+[  121s] [68/270] installing perl-libs-4:5.38.0-5.oe2403
+[  123s] [69/270] installing ncurses-6.4-8.oe2403
+[  125s] [70/270] installing perl-ExtUtils-PkgConfig-1.16-2.oe2403
+[  125s] [71/270] installing perl-Fedora-VSP-0.001-10.oe2403
+[  126s] [72/270] installing perl-parent-1:0.241-1.oe2403
+[  126s] [73/270] installing perl-perlfaq-5.20230812-1.oe2403
+[  127s] [74/270] installing isl-0.24-2.oe2403
+[  128s] [75/270] installing mpfr-4.2.1-1.oe2403
+[  128s] [76/270] installing perl-Exporter-5.77-1.oe2403
+[  129s] [77/270] installing file-5.45-1.oe2403
+[  129s] [78/270] installing patch-2.7.6-20.oe2403
+[  130s] [79/270] installing sed-4.9-3.oe2403
+[  130s] [80/270] installing glibc-common-2.38-22.oe2403
+[  134s] [81/270] installing coreutils-9.4-2.oe2403
+[  136s] [82/270] installing crontabs-1.11-23.oe2309
+[  136s] [83/270] installing elfutils-default-yama-scope-0.190-2.oe2403
+[  137s] [84/270] installing perl-Carp-1.50-419.oe2403
+[  138s] [85/270] installing perl-Perl-OSType-1.010-422.oe2403
+[  138s] [86/270] installing perl-Pod-Escapes-1:1.07_01-1.oe2403
+[  138s] [87/270] installing perl-Term-ANSIColor-5.01-2.oe2403
+[  139s] [88/270] installing publicsuffix-list-20240108-1.oe2403
+[  139s] [89/270] installing bzip2-1.0.8-6.oe2403
+[  140s] [90/270] installing gzip-1.12-4.oe2403
+[  141s] [91/270] installing libmpc-1.3.1-1.oe2403
+[  141s] [92/270] installing popt-1.19-2.oe2403
+[  142s] [93/270] installing grep-3.11-1.oe2403
+[  143s] [94/270] installing info-7.0.3-3.oe2403
+[  144s] [95/270] installing libblkid-2.39.1-4.oe2403
+[  145s] [96/270] installing libidn2-2.3.4-1.oe2403
+[  146s] [97/270] installing pcre2-devel-10.42-6.oe2403
+[  147s] [98/270] installing slang-2.3.3-2.oe2403
+[  149s] [99/270] installing tar-2:1.35-2.oe2403
+[  150s] [100/270] installing tcl-1:8.6.14-1.oe2403
+[  152s] [101/270] installing groff-base-1.23.0-2.oe2403
+[  153s] [102/270] installing jsoncpp-1.9.5-3.oe2403
+[  154s] [103/270] installing lua-5.4.6-1.oe2403
+[  155s] [104/270] installing perl-MIME-Base64-3.16-2.oe2403
+[  156s] [105/270] installing glibc-devel-2.38-22.oe2403
+[  159s] [106/270] installing gawk-5.2.2-1.oe2403
+[  160s] [107/270] installing guile-5:2.2.7-4.oe2403
+[  166s] [108/270] installing perl-PerlIO-via-QuotedPrint-0.10-1.oe2403
+[  166s] [109/270] installing zip-3.0-32.oe2403
+[  167s] [110/270] installing libfdisk-2.39.1-4.oe2403
+[  167s] [111/270] installing libxcrypt-devel-4.4.36-1.oe2403
+[  168s] [112/270] installing newt-0.52.23-1.oe2403
+[  169s] [113/270] installing perl-Text-ParseWords-3.30-420.oe2403
+[  170s] [114/270] installing bc-1.07.1-12.oe2403
+[  170s] [115/270] installing libmount-2.39.1-4.oe2403
+[  171s] [116/270] installing libselinux-devel-3.5-2.oe2403
+[  172s] [117/270] installing perl-Digest-1.20-3.oe2403
+[  172s] [118/270] installing unzip-6.0-51.oe2403
+[  173s] [119/270] installing cracklib-2.9.11-1.oe2403
+[  176s] [120/270] installing e2fsprogs-1.47.0-2.oe2403
+[  177s] [121/270] installing elfutils-libelf-0.190-2.oe2403
+[  178s] [122/270] installing findutils-2:4.9.0-1.oe2403
+[  179s] [123/270] installing libsemanage-3.5-1.oe2403
+[  180s] [124/270] installing sqlite-3.42.0-1.oe2403
+[  181s] [125/270] installing xz-5.6.0-1.oe2403
+[  182s] [126/270] installing libpsl-0.21.2-1.oe2403
+[  183s] [127/270] installing logrotate-3.21.0-1.oe2403
+[  183s] [128/270] installing make-1:4.4.1-1.oe2403
+[  184s] [129/270] installing perl-Scalar-List-Utils-4:1.63-1.oe2403
+[  185s] [130/270] installing perl-Time-HiRes-4:1.9775-1.oe2403
+[  186s] [131/270] installing cpp-12.3.1-17.oe2403
+[  190s] [132/270] installing dwz-0.15-1.oe2403
+[  191s] [133/270] installing openEuler-release-20.03LTS-53.oe2403
+[  192s] [134/270] installing perl-Digest-MD5-2.58-2.oe2403
+[  193s] [135/270] installing chkconfig-1.25-1.oe2403
+[  193s] [136/270] installing elfutils-libs-0.190-2.oe2403
+[  194s] [137/270] installing glib2-2.78.3-1.oe2403
+[  197s] [138/270] installing setup-2.14.5-1.oe2403
+[  198s] [139/270] installing binutils-2.41-3.oe2403
+[  202s] [140/270] installing elfutils-0.190-2.oe2403
+[  203s] [141/270] installing p11-kit-trust-0.25.0-2.oe2403
+[  204s] [142/270] installing babeltrace-1.5.11-1.oe2403
+[  205s] [143/270] installing basesystem-12-3.oe2309
+[  205s] [144/270] installing ca-certificates-2023.2.64-1.oe2403
+[  216s] [145/270] installing gcc-12.3.1-17.oe2403
+[  225s] [146/270] installing python-pip-wheel-23.3.1-1.oe2403
+[  226s] [147/270] installing python3-3.11.6-2.oe2403
+[  233s] [148/270] installing python3-pyparsing-3.1.1-1.oe2403
+[  234s] [149/270] installing crypto-policies-20230614-1.git5f3458e.oe2403
+[  237s] [150/270] installing gdb-headless-14.1-1.oe2403
+[  240s] [151/270] installing systemtap-sdt-devel-5.0-1.oe2403
+[  241s] [152/270] installing compat-openssl11-libs-1:1.1.1m-9.oe2403
+[  242s] [153/270] installing openssl-libs-1:3.0.12-3.oe2403
+[  244s] [154/270] installing nss-3.94.0-4.oe2403
+[  248s] [155/270] installing debugedit-5.0-6.oe2403
+[  249s] [156/270] installing libevent-2.1.12-9.oe2403
+[  250s] [157/270] installing openldap-2.6.5-4.oe2403
+[  250s] [158/270] installing fipscheck-1.5.0-10.oe2403
+[  251s] [159/270] installing nss-util-3.94.0-4.oe2403
+[  253s] [160/270] installing openssl-1:3.0.12-3.oe2403
+[  253s] [161/270] installing libarchive-3.7.1-1.oe2403
+[  254s] [162/270] installing libverto-0.3.2-3.oe2403
+[  255s] [163/270] installing nss-softokn-3.94.0-4.oe2403
+[  256s] [164/270] installing krb5-libs-1.21.2-1.oe2403
+[  257s] [165/270] installing libtirpc-1.3.4-1.oe2403
+[  258s] [166/270] installing libssh-0.10.5-2.oe2403
+[  259s] [167/270] installing libnsl2-2.0.1-1.oe2403
+[  260s] [168/270] installing libcurl-8.4.0-1.oe2403
+[  260s] [169/270] installing curl-8.4.0-1.oe2403
+[  261s] [170/270] installing tpm2-tss-4.0.1-1.oe2403
+[  262s] [171/270] installing pam-1.5.3-2.oe2403
+[  264s] [172/270] installing ima-evm-utils-libs-1.5-1.oe2403
+[  264s] [173/270] installing libpwquality-1.4.5-1.oe2403
+[  265s] [174/270] installing libcap-2.69-1.oe2403
+[  266s] [175/270] installing shadow-subid-devel-2:4.14.3-1.oe2403
+[  267s] [176/270] installing systemd-libs-255-5.oe2403
+[  268s] Detected system with incompatible nobody defined, creating /etc/systemd/dont-synthesize-nobody
+[  268s] [177/270] installing shadow-2:4.14.3-1.oe2403
+[  269s] [178/270] installing rpm-4.18.2-3.oe2403
+[  271s] [179/270] installing efi-srpm-macros-4-9.oe2403
+[  272s] [180/270] installing cmake-rpm-macros-3.27.9-2.oe2403
+[  272s] [181/270] installing dbus-libs-1:1.14.8-2.oe2403
+[  273s] [182/270] installing libutempter-1.2.1-3.oe2403
+[  274s] [183/270] installing rpm-libs-4.18.2-3.oe2403
+[  275s] [184/270] installing digest-list-tools-0.3.95-14.oe2403
+[  276s] [185/270] installing openEuler-rpm-config-30-50.oe2309
+[  277s] [186/270] installing cmake-3.27.9-2.oe2403
+[  283s] [187/270] installing util-linux-2.39.1-4.oe2403
+[  287s] [188/270] installing util-linux-devel-2.39.1-4.oe2403
+[  287s] [189/270] installing cmake-data-3.27.9-2.oe2403
+[  290s] [190/270] installing policycoreutils-3.5-1.oe2403
+[  291s] [191/270] installing rpm-build-4.18.2-3.oe2403
+[  291s] [192/270] installing perl-4:5.38.0-5.oe2403
+[  294s] [193/270] installing perl-B-Debug-1.26-6.oe2403
+[  295s] [194/270] installing perl-Env-1.04-398.oe2403
+[  295s] [195/270] installing perl-Text-Tabs+Wrap-2023.0511-1.oe2403
+[  296s] [196/270] installing perl-Devel-PPPort-3.71-1.oe2403
+[  297s] [197/270] installing perl-Algorithm-Diff-1:1.201-2.oe2403
+[  297s] [198/270] installing perl-Params-Check-1:0.38-420.oe2403
+[  298s] [199/270] installing perl-Term-Cap-1.18-1.oe2403
+[  298s] [200/270] installing perl-Text-Balanced-2.06-1.oe2403
+[  299s] [201/270] installing perl-generators-1.10-11.oe2403
+[  299s] [202/270] installing perl-threads-2:2.36-1.oe2403
+[  300s] [203/270] installing perl-CPAN-Meta-YAML-0.018-421.oe2403
+[  300s] [204/270] installing perl-Config-Perl-V-0.36-1.oe2403
+[  301s] [205/270] installing perl-Filter-2:1.64-1.oe2403
+[  302s] [206/270] installing perl-IPC-SysV-2.09-2.oe2403
+[  303s] [207/270] installing perl-Locale-Maketext-1:1.33-1.oe2403
+[  303s] [208/270] installing perl-constant-1.33-422.oe2403
+[  304s] [209/270] installing pesign-obs-integration-10.1-4.oe2403
+[  305s] [210/270] installing selinux-policy-40.7-1.oe2403
+[  306s] [211/270] installing perl-Socket-4:2.037-1.oe2403
+[  307s] [212/270] installing perl-Storable-1:3.25-3.oe2403
+[  308s] [213/270] installing perl-Unicode-Normalize-1.32-1.oe2403
+[  309s] [214/270] installing gcc_secure-1.0-0.12.oe2403
+[  309s] [215/270] installing glib2-devel-2.78.3-1.oe2403
+[  311s] [216/270] installing selinux-policy-targeted-40.7-1.oe2403
+[  316s] [217/270] installing perl-Filter-Simple-1:0.94-1.oe2403
+[  317s] [218/270] installing perl-IO-Socket-IP-0.42-1.oe2403
+[  317s] [219/270] installing perl-Text-Diff-1.45-8.oe2403
+[  318s] [220/270] installing perl-Time-Local-2:1.350-1.oe2403
+[  318s] [221/270] installing perl-version-8:0.99.30-1.oe2403
+[  319s] [222/270] installing perl-IPC-System-Simple-1.30-3.oe2403
+[  319s] [223/270] installing perl-threads-shared-1.62-2.oe2403
+[  320s] [224/270] installing perl-Compress-Raw-Bzip2-2.206-1.oe2403
+[  321s] [225/270] installing perl-Compress-Raw-Zlib-1:2.206-1.oe2403
+[  321s] [226/270] installing perl-Locale-Codes-3.77-1.oe2403
+[  323s] [227/270] installing perl-PathTools-3.89-1.oe2403
+[  323s] [228/270] installing perl-Sys-Syslog-0.36-2.oe2403
+[  324s] [229/270] installing perl-Math-BigInt-1:2.0030.02-1.oe2403
+[  325s] [230/270] installing perl-Data-Dumper-2.183-2.oe2403
+[  326s] [231/270] installing perl-Encode-4:3.20-1.oe2403
+[  328s] [232/270] installing perl-Module-Load-1:0.36-2.oe2403
+[  328s] [233/270] installing perl-Thread-Queue-3.13-4.oe2403
+[  329s] [234/270] installing perl-experimental-0.031-2.oe2403
+[  329s] [235/270] installing perl-ExtUtils-Depends-0.8001-1.oe2403
+[  330s] [236/270] installing perl-File-Path-2.18-2.oe2403
+[  330s] [237/270] installing perl-Module-Metadata-1.000037-2.oe2403
+[  331s] [238/270] installing perl-CPAN-Meta-Requirements-2.143-2.oe2403
+[  332s] [239/270] installing perl-Encode-devel-4:3.20-1.oe2403
+[  332s] [240/270] installing perl-HTTP-Tiny-0.088-1.oe2403
+[  333s] [241/270] installing perl-Math-BigInt-FastCalc-0.5018-1.oe2403
+[  334s] [242/270] installing perl-bignum-0.66-1.oe2403
+[  334s] [243/270] installing perl-Unicode-Collate-1.31-2.oe2403
+[  336s] [244/270] installing perl-autodie-2.36-1.oe2403
+[  336s] [245/270] installing perl-libnet-3.15-1.oe2403
+[  337s] [246/270] installing perl-podlators-1:5.01-2.oe2403
+[  338s] [247/270] installing perl-ExtUtils-Command-1:7.70-2.oe2403
+[  338s] [248/270] installing perl-ExtUtils-Manifest-1:1.75-1.oe2403
+[  339s] [249/270] installing perl-File-Temp-1:0.2311-3.oe2403
+[  339s] [250/270] installing perl-Pod-Perldoc-1:3.28-5.oe2403
+[  340s] [251/270] installing perl-Test-Simple-2:1.302198-1.oe2403
+[  340s] [252/270] installing perl-Pod-Usage-4:2.03-2.oe2403
+[  341s] [253/270] installing perl-Getopt-Long-1:2.57-1.oe2403
+[  342s] [254/270] installing perl-ExtUtils-ParseXS-2:3.51-1.oe2403
+[  342s] [255/270] installing perl-Module-CoreList-1:5.20231230-1.oe2403
+[  343s] [256/270] installing perl-Pod-Parser-1.66-1.oe2403
+[  343s] [257/270] installing perl-Digest-SHA-1:6.04-1.oe2403
+[  344s] [258/270] installing perl-Pod-Simple-1:3.45-1.oe2403
+[  345s] [259/270] installing perl-Test-Harness-2:3.48-1.oe2403
+[  345s] [260/270] installing perl-IO-Compress-2.206-1.oe2403
+[  346s] [261/270] installing perl-JSON-PP-1:4.16-1.oe2403
+[  347s] [262/270] installing perl-Pod-Checker-4:1.75-1.oe2403
+[  347s] [263/270] installing perl-CPAN-Meta-2.150010-420.oe2403
+[  348s] [264/270] installing perl-Module-Load-Conditional-0.74-2.oe2403
+[  349s] [265/270] installing perl-Archive-Tar-3.02-1.oe2403
+[  349s] [266/270] installing perl-ExtUtils-MakeMaker-1:7.70-2.oe2403
+[  350s] [267/270] installing perl-ExtUtils-Install-2.22-1.oe2403
+[  350s] [268/270] installing perl-IPC-Cmd-2:1.04-4.oe2403
+[  351s] [269/270] installing perl-File-Fetch-1.04-1.oe2403
+[  351s] [270/270] installing perl-devel-4:5.38.0-5.oe2403
+[  355s] now finalizing build dir...
+[  361s] Warning: spec file parser line 10: can't expand %(...)
+[  361s] Warning: spec file parser line 19: can't expand %(...)
+[  361s] -----------------------------------------------------------------
+[  361s] I have the following modifications for perl-Glib.spec:
+[  362s] 4c4
+[  362s] < Release:        4
+[  362s] ---
+[  362s] > Release:        5.1
+[  366s] -----------------------------------------------------------------
+[  366s] ----- building perl-Glib.spec (user abuild)
+[  366s] -----------------------------------------------------------------
+[  366s] -----------------------------------------------------------------
+[  368s] + exec rpmbuild -ba --define '_srcdefattr (-,root,root)' --nosignature --undefine _enable_debug_packages --define 'disturl obs://rvpt-obs-main/openEuler:24.03:fix/standard/dab9054b822e34e7bea1a006cd5affbb-glib' /home/abuild/rpmbuild/SOURCES/perl-Glib.spec
+[  370s] Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.dleKD4
+[  370s] + umask 022
+[  370s] + cd /home/abuild/rpmbuild/BUILD
+[  370s] + cd /home/abuild/rpmbuild/BUILD
+[  370s] + rm -rf Glib-1.3293
+[  370s] + /usr/lib/rpm/rpmuncompress -x /home/abuild/rpmbuild/SOURCES/Glib-1.3293.tar.gz
+[  371s] + STATUS=0
+[  371s] + '[' 0 -ne 0 ']'
+[  371s] + cd Glib-1.3293
+[  371s] + /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
+[  371s] + RPM_EC=0
+[  371s] ++ jobs -p
+[  371s] + exit 0
+[  371s] Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.7pmpiu
+[  371s] + umask 022
+[  371s] + cd /home/abuild/rpmbuild/BUILD
+[  371s] + cd Glib-1.3293
+[  371s] + export PERL_MM_OPT=
+[  371s] + PERL_MM_OPT=
+[  371s] + /usr/bin/perl Makefile.PL INSTALLDIRS=vendor 'OPTIMIZE=-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -fasynchronous-unwind-tables -fstack-clash-protection'
+[  373s] Including generated API documentation...
+[  375s] Checking if your kit is complete...
+[  375s] Looks good
+[  376s] Unrecognized argument in LIBS ignored: '-pthread'
+[  376s] Generating a Unix-style Makefile
+[  376s] Writing Makefile for Glib
+[  376s] Writing MYMETA.yml and MYMETA.json
+[  376s] + make -j24
+[  377s] Running Mkbootstrap for Glib ()
+[  377s] [ XS Glib.xs ]
+[  377s] [ XS GLog.xs ]
+[  377s] [ XS GUtils.xs ]
+[  377s] [ XS GError.xs ]
+[  377s] [ XS GType.xs ]
+[  377s] [ XS GBoxed.xs ]
+[  377s] [ XS GKeyFile.xs ]
+[  377s] [ XS GObject.xs ]
+[  377s] [ XS GClosure.xs ]
+[  377s] [ XS GSignal.xs ]
+[  377s] [ XS GValue.xs ]
+[  377s] [ XS GMainLoop.xs ]
+[  377s] [ XS GIOChannel.xs ]
+[  377s] [ XS GParamSpec.xs ]
+[  377s] "/usr/bin/perl" -MExtUtils::Command -e mkpath blib/lib/Glib/
+[  377s] [ XS GVariant.xs ]
+[  377s] [ XS GOption.xs ]
+[  377s] [ XS GBookmarkFile.xs ]
+[  377s] [ CC gperl-gtypes.c ]
+[  377s] cp lib/Glib.pm blib/lib/Glib.pm
+[  377s] cp lib/Glib/Object/Subclass.pm blib/lib/Glib/Object/Subclass.pm
+[  377s] cp lib/Glib/ParseXSDoc.pm blib/lib/Glib/ParseXSDoc.pm
+[  377s] cp /home/abuild/rpmbuild/BUILD/Glib-1.3293/typemap blib/arch/Glib/Install/typemap
+[  377s] cp build/IFiles.pm blib/arch/Glib/Install/Files.pm
+[  377s] cp gperl.h blib/arch/Glib/Install/gperl.h
+[  377s] cp lib/Glib/GenPod.pm blib/lib/Glib/GenPod.pm
+[  377s] cp gperl_marshal.h blib/arch/Glib/Install/gperl_marshal.h
+[  377s] cp devel.pod blib/lib/Glib/devel.pod
+[  377s] cp lib/Glib/CodeGen.pm blib/lib/Glib/CodeGen.pm
+[  377s] cp doctypes blib/arch/Glib/Install/doctypes
+[  377s] cp lib/Glib/MakeHelper.pm blib/lib/Glib/MakeHelper.pm
+[  377s] chmod 644 "Glib.bs"
+[  378s] Parsing XS files...
+[  378s] "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Glib.bs blib/arch/auto/Glib/Glib.bs 644
+[  378s] mv GValue.xsc GValue.c
+[  378s] mv GIOChannel.xsc GIOChannel.c
+[  378s] mv GClosure.xsc GClosure.c
+[  378s] mv Glib.xsc Glib.c
+[  378s] mv GLog.xsc GLog.c
+[  378s] [ CC GValue.c ]
+[  378s] mv GBoxed.xsc GBoxed.c
+[  378s] mv GError.xsc GError.c
+[  378s] [ CC GIOChannel.c ]
+[  378s] [ CC GClosure.c ]
+[  378s] [ CC Glib.c ]
+[  378s] [ CC GLog.c ]
+[  378s] mv GSignal.xsc GSignal.c
+[  378s] [ CC GBoxed.c ]
+[  378s] mv GUtils.xsc GUtils.c
+[  378s] mv GObject.xsc GObject.c
+[  378s] mv GMainLoop.xsc GMainLoop.c
+[  378s] mv GType.xsc GType.c
+[  378s] [ CC GError.c ]
+[  378s] [ CC GSignal.c ]
+[  378s] [ CC GType.c ]
+[  378s] [ CC GMainLoop.c ]
+[  378s] [ CC GUtils.c ]
+[  378s] [ CC GObject.c ]
+[  378s] mv GKeyFile.xsc GKeyFile.c
+[  379s] mv GParamSpec.xsc GParamSpec.c
+[  379s] Creating XS API documentation...
+[  379s] [ CC GKeyFile.c ]
+[  379s] [ CC GParamSpec.c ]
+[  379s] mv GOption.xsc GOption.c
+[  379s] [ CC GOption.c ]
+[  379s] mv GBookmarkFile.xsc GBookmarkFile.c
+[  379s] [ CC GBookmarkFile.c ]
+[  380s] mv GVariant.xsc GVariant.c
+[  380s] [ CC GVariant.c ]
+[  382s] GLog.xs: In function 'gperl_log_handler':
+[  382s] GLog.xs:99:15: warning: unused variable 'env' [-Wunused-variable]
+[  382s]    99 |         char *env;
+[  382s]       |               ^~~
+[  383s] GParamSpec.xs: In function 'boot_Glib__ParamSpec':
+[  383s] GParamSpec.xs:240:20: warning: Deprecated pre-processor symbol
+[  383s]   240 |         gperl_register_param_spec (G_TYPE_PARAM_VALUE_ARRAY, "Glib::Param::ValueArray");
+[  383s]       |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs: In function 'XS_Glib__BookmarkFile_set_app_info':
+[  383s] GBookmarkFile.xs:558:9: warning: 'g_bookmark_file_set_app_info' is deprecated: Use 'g_bookmark_file_set_application_info' instead [-Wdeprecated-declarations]
+[  383s]   558 |         g_bookmark_file_set_app_info (bookmark_file, uri, name,
+[  383s]       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] In file included from /usr/include/glib-2.0/glib.h:39,
+[  383s]                  from /usr/include/glib-2.0/gobject/gbinding.h:30,
+[  383s]                  from /usr/include/glib-2.0/glib-object.h:24,
+[  383s]                  from gperl.h:37,
+[  383s]                  from GBookmarkFile.xs:21:
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:172:16: note: declared here
+[  383s]   172 | gboolean       g_bookmark_file_set_app_info        (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs: In function 'XS_Glib__BookmarkFile_get_app_info':
+[  383s] GBookmarkFile.xs:583:9: warning: 'g_bookmark_file_get_app_info' is deprecated: Use 'g_bookmark_file_get_application_info' instead [-Wdeprecated-declarations]
+[  383s]   583 |         g_bookmark_file_get_app_info (bookmark_file, uri, name,
+[  383s]       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:188:16: note: declared here
+[  383s]   188 | gboolean       g_bookmark_file_get_app_info        (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs: In function 'XS_Glib__BookmarkFile_get_added':
+[  383s] GBookmarkFile.xs:674:17: warning: 'g_bookmark_file_get_added' is deprecated: Use 'g_bookmark_file_get_added_date_time' instead [-Wdeprecated-declarations]
+[  383s]   674 |                 RETVAL = g_bookmark_file_get_added    (bookmark_file, uri, &err);
+[  383s]       |                 ^~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:231:16: note: declared here
+[  383s]   231 | time_t         g_bookmark_file_get_added           (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs:677:17: warning: 'g_bookmark_file_get_modified' is deprecated: Use 'g_bookmark_file_get_modified_date_time' instead [-Wdeprecated-declarations]
+[  383s]   677 |                 RETVAL = g_bookmark_file_get_modified (bookmark_file, uri, &err);
+[  383s]       |                 ^~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:247:16: note: declared here
+[  383s]   247 | time_t         g_bookmark_file_get_modified        (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs:680:17: warning: 'g_bookmark_file_get_visited' is deprecated: Use 'g_bookmark_file_get_visited_date_time' instead [-Wdeprecated-declarations]
+[  383s]   680 |                 RETVAL = g_bookmark_file_get_visited  (bookmark_file, uri, &err);
+[  383s]       |                 ^~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:263:16: note: declared here
+[  383s]   263 | time_t         g_bookmark_file_get_visited         (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs: In function 'XS_Glib__BookmarkFile_set_added':
+[  383s] GBookmarkFile.xs:718:17: warning: 'g_bookmark_file_set_added' is deprecated: Use 'g_bookmark_file_set_added_date_time' instead [-Wdeprecated-declarations]
+[  383s]   718 |                 g_bookmark_file_set_added    (bookmark_file, uri, value); break;
+[  383s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:223:16: note: declared here
+[  383s]   223 | void           g_bookmark_file_set_added           (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs:720:17: warning: 'g_bookmark_file_set_modified' is deprecated: Use 'g_bookmark_file_set_modified_date_time' instead [-Wdeprecated-declarations]
+[  383s]   720 |                 g_bookmark_file_set_modified (bookmark_file, uri, value); break;
+[  383s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:239:16: note: declared here
+[  383s]   239 | void           g_bookmark_file_set_modified        (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] GBookmarkFile.xs:722:17: warning: 'g_bookmark_file_set_visited' is deprecated: Use 'g_bookmark_file_set_visited_date_time' instead [-Wdeprecated-declarations]
+[  383s]   722 |                 g_bookmark_file_set_visited  (bookmark_file, uri, value); break;
+[  383s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  383s] /usr/include/glib-2.0/glib/gbookmarkfile.h:255:16: note: declared here
+[  383s]   255 | void           g_bookmark_file_set_visited         (GBookmarkFile  *bookmark,
+[  383s]       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  393s] rm -f blib/arch/auto/Glib/Glib.so
+[  393s] [ LD blib/arch/auto/Glib/Glib.so ]
+[  394s] chmod 755 blib/arch/auto/Glib/Glib.so
+[  394s] Generating POD...
+[  395s] Loaded 8 extra types from doctypes
+[  395s] Creating POD index...
+[  400s] Manifying 37 pod documents
+[  402s] Manifying 3 pod documents
+[  402s] + RPM_EC=0
+[  402s] ++ jobs -p
+[  402s] + exit 0
+[  402s] Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.tzhMRw
+[  402s] + umask 022
+[  402s] + cd /home/abuild/rpmbuild/BUILD
+[  402s] + '[' /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64 '!=' / ']'
+[  402s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  402s] ++ dirname /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  402s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT
+[  402s] + mkdir /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  402s] + cd Glib-1.3293
+[  402s] + export PERL_MM_OPT=
+[  402s] + PERL_MM_OPT=
+[  402s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  402s] + make pure_install PERL_INSTALL_ROOT=/home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  403s] "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Glib.bs blib/arch/auto/Glib/Glib.bs 644
+[  404s] Manifying 37 pod documents
+[  405s] Manifying 3 pod documents
+[  406s] Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/auto/Glib/Glib.so
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Install/gperl_marshal.h
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Install/typemap
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Install/doctypes
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Install/Files.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Install/gperl.h
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/GenPod.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/MainLoop.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/ParamSpec.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Variant.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Bytes.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/devel.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/VariantDict.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/xsapi.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Flags.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/MakeHelper.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Object.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/ParseXSDoc.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Log.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Error.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Markup.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/KeyFile.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/OptionGroup.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/OptionContext.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Signal.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/index.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Utils.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Type.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Boxed.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/version.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/BookmarkFile.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/VariantType.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/CodeGen.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Double.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Int64.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/UInt.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Boolean.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Int.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Flags.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Unichar.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/String.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/GType.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/Enum.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Param/UInt64.pod
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/lib64/perl5/vendor_perl/Glib/Object/Subclass.pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::MainLoop.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::MakeHelper.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Enum.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Variant.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Markup.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Utils.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Flags.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::KeyFile.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Int64.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Bytes.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Int.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::ParseXSDoc.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::VariantDict.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::OptionGroup.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::UInt64.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Boolean.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::UInt.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Log.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::devel.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Flags.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Error.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::GType.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Double.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::xsapi.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::index.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Object.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::String.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::CodeGen.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::BookmarkFile.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::VariantType.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Boxed.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::OptionContext.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::ParamSpec.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Signal.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Type.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Object::Subclass.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::Param::Unichar.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::GenPod.3pm
+[  406s] Installing /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/man/man3/Glib::version.3pm
+[  406s] + find /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64 -type f -name .packlist -exec rm -f '{}' ';'
+[  406s] + find /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64 -type f -name '*.bs' -size 0 -exec rm -f '{}' ';'
+[  406s] + find /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64 -depth -type d -exec rmdir '{}' ';'
+[  407s] + /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr
+[  407s] + pushd /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  407s] ~/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64 ~/rpmbuild/BUILD/Glib-1.3293
+[  407s] + touch filelist.lst
+[  407s] + '[' -d usr/bin ']'
+[  407s] + '[' -d usr/sbin ']'
+[  407s] + '[' -d usr/lib64 ']'
+[  407s] + find usr/lib64 -type f -printf '/%h/%f\n'
+[  407s] + '[' -d usr/lib ']'
+[  407s] + popd
+[  407s] ~/rpmbuild/BUILD/Glib-1.3293
+[  407s] + mv /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/filelist.lst .
+[  407s] + /usr/lib/rpm/check-buildroot
+[  407s] + /usr/lib/rpm/brp-ldconfig
+[  408s] + /usr/lib/rpm/brp-compress
+[  410s] + /usr/lib/rpm/brp-strip /usr/bin/strip
+[  411s] + /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
+[  411s] + /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
+[  412s] + /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
+[  412s] + /usr/lib/rpm/brp-python-hardlink
+[  413s] Executing(%check): /bin/sh -e /var/tmp/rpm-tmp.68CXUh
+[  413s] + umask 022
+[  413s] + cd /home/abuild/rpmbuild/BUILD
+[  413s] + cd Glib-1.3293
+[  413s] + make test
+[  413s] "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Glib.bs blib/arch/auto/Glib/Glib.bs 644
+[  414s] PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+[  416s] t/1.t ...................... ok
+[  417s] t/2.t ...................... ok
+[  417s] t/3.t ...................... ok
+[  418s] t/4.t ...................... ok
+[  419s] t/5.t ...................... ok
+[  419s] t/6.t ...................... ok
+[  420s] t/64bit.t .................. ok
+[  420s] GLib-GObject-CRITICAL **: ../gobject/gsignal.c:2522: signal 'nosuchsignal' is invalid for instance '0x555555d88570' of type 'MyClass' at t/7.t line 286.
+[  420s] t/7.t ...................... ok
+[  421s] t/8.t ...................... ok
+[  424s] t/9.t ...................... ok
+[  425s] t/a.t ...................... ok
+[  425s] t/b.t ...................... ok
+[  426s] t/boxed_errors.t ........... ok
+[  426s] t/bytes.t .................. ok
+[  427s] t/c.t ...................... ok
+[  428s] t/constants.t .............. ok
+[  428s] t/d.t ...................... ok
+[  429s] t/e.t ...................... ok
+[  430s] t/f.t ...................... ok
+[  431s] t/filename.t ............... ok
+[  431s] t/g.t ...................... ok
+[  432s] t/h.t ...................... ok
+[  433s] t/lazy_loader.t ............ ok
+[  434s] t/make_helper.t ............ ok
+[  434s] t/module_versions.t ........ skipped: Test::ConsistentVersion required for checking module versions
+[  435s] t/options.t ................ ok
+[  436s] t/signal_emission_hooks.t .. ok
+[  436s] t/signal_marshal.t ......... ok
+[  437s] t/signal_query.t ........... ok
+[  438s] t/tied_definedness.t ....... ok
+[  439s] t/tied_flags.t ............. ok
+[  440s] t/tied_set_property.t ...... ok
+[  441s] t/variant.t ................ ok
+[  441s] All tests successful.
+[  441s] Files=33, Tests=1193, 27 wallclock secs ( 1.52 usr  0.08 sys + 22.49 cusr  0.63 csys = 24.72 CPU)
+[  441s] Result: PASS
+[  441s] + RPM_EC=0
+[  441s] ++ jobs -p
+[  441s] + exit 0
+[  441s] Processing files: perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  441s] Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.3JaZil
+[  441s] + umask 022
+[  441s] + cd /home/abuild/rpmbuild/BUILD
+[  441s] + cd Glib-1.3293
+[  441s] + DOCDIR=/home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + export LC_ALL=C
+[  441s] + LC_ALL=C
+[  441s] + export DOCDIR
+[  441s] + /usr/bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr AUTHORS /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr ChangeLog.pre-git /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr doctypes /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr Glib.exports /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr LICENSE /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr META.json /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr NEWS /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr README /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr TODO /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr xsapi.pod.foot /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + cp -pr xsapi.pod.head /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64/usr/share/doc/perl-Glib
+[  441s] + RPM_EC=0
+[  441s] ++ jobs -p
+[  442s] + exit 0
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/BookmarkFile.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Boxed.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Bytes.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/CodeGen.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Error.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Flags.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/GenPod.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/Files.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/doctypes
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl.h
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl_marshal.h
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/typemap
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/KeyFile.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Log.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MainLoop.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MakeHelper.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Markup.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object/Subclass.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionContext.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionGroup.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Boolean.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Double.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Enum.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Flags.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/GType.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int64.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/String.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt64.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Unichar.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParamSpec.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParseXSDoc.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Signal.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Type.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Utils.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Variant.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantDict.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantType.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/devel.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/index.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/version.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/xsapi.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/auto/Glib/Glib.so
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/BookmarkFile.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Boxed.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Bytes.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/CodeGen.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Error.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Flags.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/GenPod.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/Files.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/doctypes
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl.h
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl_marshal.h
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/typemap
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/KeyFile.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Log.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MainLoop.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MakeHelper.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Markup.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object/Subclass.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionContext.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionGroup.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Boolean.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Double.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Enum.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Flags.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/GType.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int64.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/String.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt64.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Unichar.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParamSpec.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParseXSDoc.pm
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Signal.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Type.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Utils.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Variant.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantDict.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantType.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/devel.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/index.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/version.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/Glib/xsapi.pod
+[  442s] warning: File listed twice: /usr/lib64/perl5/vendor_perl/auto/Glib/Glib.so
+[  448s] Provides: perl(Glib) = 1.3293 perl(Glib::Bytes) perl(Glib::CodeGen) = 1.3293 perl(Glib::Error) perl(Glib::Flags) perl(Glib::GenPod) = 1.3293 perl(Glib::Install::Files) perl(Glib::MakeHelper) = 1.3293 perl(Glib::Object) perl(Glib::Object::Property) perl(Glib::Object::Property::ReadWrite) perl(Glib::Object::Property::Readable) perl(Glib::Object::Property::Writable) perl(Glib::Object::Subclass) = 1.3293 perl(Glib::Object::_LazyLoader) perl(Glib::ParseXSDoc) = 1.3293 perl(Glib::Variant) perl(MY) perl-Glib = 1.3293-5.1.oe2403fix perl-Glib(riscv-64) = 1.3293-5.1.oe2403fix
+[  448s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  448s] Requires: ld-linux-riscv64-lp64d.so.1()(64bit) ld-linux-riscv64-lp64d.so.1(GLIBC_2.27)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.27)(64bit) libc.so.6(GLIBC_2.34)(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libgthread-2.0.so.0()(64bit) libperl.so.5.38()(64bit) perl(:VERSION) >= 5.8.0 perl(Carp) perl(Cwd) perl(Data::Dumper) perl(DynaLoader) perl(Exporter) perl(ExtUtils::MakeMaker) perl(File::Spec) perl(Glib) perl(IO::File) perl(POSIX) perl(Storable) perl(base) perl(constant) perl(overload) perl(strict) perl(vars) perl(warnings) rtld(GNU_HASH)
+[  448s] Processing files: perl-Glib-help-1.3293-5.1.oe2403fix.riscv64
+[  449s] Provides: perl-Glib-doc perl-Glib-help = 1.3293-5.1.oe2403fix perl-Glib-help(riscv-64) = 1.3293-5.1.oe2403fix
+[  449s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  449s] Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  449s] Wrote: /home/abuild/rpmbuild/SRPMS/perl-Glib-1.3293-5.1.oe2403fix.src.rpm
+[  449s] Wrote: /home/abuild/rpmbuild/RPMS/riscv64/perl-Glib-help-1.3293-5.1.oe2403fix.riscv64.rpm
+[  450s] Wrote: /home/abuild/rpmbuild/RPMS/riscv64/perl-Glib-1.3293-5.1.oe2403fix.riscv64.rpm
+[  450s] Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.fPeW5H
+[  450s] + umask 022
+[  450s] + cd /home/abuild/rpmbuild/BUILD
+[  450s] + cd Glib-1.3293
+[  450s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/perl-Glib-1.3293-5.1.oe2403fix.riscv64
+[  450s] + RPM_EC=0
+[  450s] ++ jobs -p
+[  450s] + exit 0
+[  450s] Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.AH6XsQ
+[  450s] + umask 022
+[  450s] + cd /home/abuild/rpmbuild/BUILD
+[  450s] + rm -rf Glib-1.3293 Glib-1.3293.gemspec
+[  450s] + RPM_EC=0
+[  450s] ++ jobs -p
+[  450s] + exit 0
+[  450s] 
+[  450s] RPM build warnings:
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/BookmarkFile.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Boxed.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Bytes.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/CodeGen.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Error.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Flags.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/GenPod.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/Files.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/doctypes
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl.h
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl_marshal.h
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/typemap
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/KeyFile.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Log.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MainLoop.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MakeHelper.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Markup.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object/Subclass.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionContext.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionGroup.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Boolean.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Double.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Enum.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Flags.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/GType.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int64.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/String.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt64.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Unichar.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParamSpec.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParseXSDoc.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Signal.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Type.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Utils.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Variant.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantDict.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantType.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/devel.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/index.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/version.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/xsapi.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/auto/Glib/Glib.so
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/BookmarkFile.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Boxed.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Bytes.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/CodeGen.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Error.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Flags.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/GenPod.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/Files.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/doctypes
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl.h
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/gperl_marshal.h
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Install/typemap
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/KeyFile.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Log.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MainLoop.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/MakeHelper.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Markup.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Object/Subclass.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionContext.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/OptionGroup.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Boolean.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Double.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Enum.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Flags.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/GType.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Int64.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/String.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/UInt64.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Param/Unichar.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParamSpec.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/ParseXSDoc.pm
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Signal.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Type.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Utils.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/Variant.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantDict.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/VariantType.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/devel.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/index.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/version.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/Glib/xsapi.pod
+[  450s]     File listed twice: /usr/lib64/perl5/vendor_perl/auto/Glib/Glib.so
+[  453s] ... checking for files with abuild user/group
+[  453s] Warning: mkbaselibs missing in build root, skipping baselibs
+[  453s] 
+[  453s] riscv64-oe2309-iscas-r750-docker-chroot-01-24c70g finished "build perl-Glib.spec" at Mon Apr  1 13:23:09 UTC 2024.
+[  453s] 
